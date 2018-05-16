@@ -67,17 +67,26 @@ while 1 == 1 {
 
 // PROCESS
 // The integer part of the fraction
-var integerResult = validNumeratorInput / validDenominatorInput
+let integerResult = validNumeratorInput / validDenominatorInput
 
 // The remainder part of the fraction
-var remainderResult = validNumeratorInput % validDenominatorInput
+var remainderNumerator = validNumeratorInput % validDenominatorInput
+var remainderDenominator = validDenominatorInput
+
+// Reduce the fraction, when the greatest common factor is the numerator
+if remainderDenominator % remainderNumerator == 0 {
+    let reducedNumerator = 1
+    let reducedDenominator = remainderDenominator / remainderDenominator
+} else if 
+
+for greatestCommonFactor in stride(from: remainderNumerator / 2, to: 1, by: -1) {
+    
+}
 
 
-// The answer in total
-var finalAnswer = integerResult + remainderResult / 
 
 // OUTPUT
 print("The result is?")
-print(finalAnswer)
+print()
 // Report results to the user here
 
